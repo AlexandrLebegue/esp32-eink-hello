@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "author": "velxio",
+  "editor": "velxio",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "rotate": 0,
+      "attrs": {}
+    },
+    {
+      "type": "velxio-epaper",
+      "id": "epaper",
+      "top": 0,
+      "left": 300,
+      "rotate": 0,
+      "attrs": {
+        "panelKind": "epaper-1in54-bw"
+      }
+    }
+  ],
+  "connections": [
+    [
+      "esp:GPIO18",
+      "epaper:SCK",
+      "green",
+      []
+    ],
+    [
+      "esp:GPIO23",
+      "epaper:SDI",
+      "yellow",
+      []
+    ],
+    [
+      "esp:GPIO5",
+      "epaper:CS",
+      "red",
+      []
+    ],
+    [
+      "esp:GPIO17",
+      "epaper:DC",
+      "blue",
+      []
+    ],
+    [
+      "esp:GPIO16",
+      "epaper:RST",
+      "orange",
+      []
+    ],
+    [
+      "esp:GPIO4",
+      "epaper:BUSY",
+      "purple",
+      []
+    ],
+    [
+      "esp:3V3",
+      "epaper:VCC",
+      "black",
+      []
+    ],
+    [
+      "esp:GND",
+      "epaper:GND",
+      "black",
+      []
+    ]
+  ]
+}
