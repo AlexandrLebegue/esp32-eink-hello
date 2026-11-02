@@ -1,0 +1,11 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "hyperqwen/qwen3.8-27b",
+  "mcp": {
+    "velxio": {
+      "type": "remote",
+      "url": "http://192.168.1.75:8002/mcp",
+      "enabled": true
+    }
+  }
+}
